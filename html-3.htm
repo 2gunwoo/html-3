@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>2gunwoo</title>
+</head>
+<body>
+      <p>input, button, fieldset, details</p>
+<form>
+      <details>
+        <summary> details,summary </summary>
+        <fieldset>
+          <legend> text,password </legend>
+      아 이 디 : <input type="text" name="id" placeholder="text"/><br>
+      비밀번호 : <input type="password" name="passwd" placeholder="password"/><br>
+      <input type="submit" name="save" value="저장"/>
+      <input type="reset" name="set" value="취소"/><br>
+      </fieldset>
+      <fieldset>
+        <legend> date,time,number,range </legend>
+      달력 : <input type="date"/><br>
+      시간 : <input type="time"/><br>
+      수치 +2 : <input type="number" step="2" min="0" max="50" value="2"/><br>
+      수치범위 : <input type="range" step="1" min="0" max="10" value="2"/><br>
+    </fieldset>
+    <fieldset>
+      <legend> textarea,file </legend>
+      메모 : <textarea rows="2" cols="20" name="memo"> </textarea><br>
+      파일 : <input type="file"/><br>
+    </fieldset>
+    <fieldset>
+      <legend> email,tel,url </legend>
+      이 메 일 : <input type="email" placeholder="@포함"/><br>
+      전화번호 : <input type="tel" pattern="[0-3]{3}-[0-9]{4}-[0-9]{4}" placeholder="000-0000-0000"/><br>
+      ip _ 주소 : <input type="url" placeholder="url 형식"/><br>
+    </fieldset>
+    <fieldset>
+      <legend> radio,checkbox </legend>
+    단일 선택 : <input type="radio" name="a"/> <input type="radio" name="a" checked/><br>
+    다중 선택 : <input type="checkbox" name="a" checked/> <input type="checkbox" name="a" checked/>
+  </fieldset>
+  <fieldset>
+    <legend>button 팝업, select, option</legend>
+    <button type="button" onclick="alert('클릭확인');">클릭</button>
+    <select name="number">
+      <option value="one">1</option>
+      <option value="two">2</option>
+      <option value="three">3</option>
+    </select>
+      <select name="num" size="2" multiple>
+        <option value="one1">1</option>
+        <option value="two2"selected>2</option>
+        <option value="three3">3</option>
+      </select>
+  </fieldset>
+    </details>
+</form>
+</body>
+</html>
